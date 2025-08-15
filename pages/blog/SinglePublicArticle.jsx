@@ -50,7 +50,7 @@ function SinglePublicArticle(){
     // } catch (error) {
     //     console.log(error);
     // }
-    // }
+    //} srujan
     return(
         <>
         <img width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />

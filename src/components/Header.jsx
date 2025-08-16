@@ -18,8 +18,15 @@ const Header = () => {
 
     {user ? (
        <>
-         <NavLink to="/myprofile">Myprofile</NavLink>
+         {user.role==='admin' && (<>
       <NavLink to="/admin/blog">DashBoard</NavLink>
+
+
+         <NavLink to="/admin/users">Users</NavLink>
+</>)}
+
+
+      <NavLink to="/myprofile">Myprofile</NavLink>
       <button onClick={logout}>Logout</button>
        </>
 

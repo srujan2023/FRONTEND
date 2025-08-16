@@ -37,7 +37,7 @@ function ListArticles(){
   return(
     <>
      <h1>List All Articles</h1>
-     <NavLink to={"/admin/blog/create"}>Create Article</NavLink>
+    <NavLink to={"/admin/blog/create"}>Create Article</NavLink>
      {articles ? (
              <div>
          {articles.map((article)=>(

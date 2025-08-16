@@ -17,6 +17,10 @@ import Editprofile from '../pages/Editprofile.jsx'
 import Home from '../Home.jsx'
 import ProtectedRoutes from './ProtectedRoutes.jsx'
 import ProtectedAuth from './ProtectedAuth.jsx'
+import ListUsers from '../pages/users/ListUsers.jsx'
+import ListSingleUsers from '../pages/users/ListSingleUsers.jsx'
+import UpdateUsers from '../pages/users/UpdateUsers.jsx'
+import ProtectedAdmin from './ProtectedAdmin.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -24,23 +28,31 @@ createRoot(document.getElementById('root')).render(
       <Routes>
        <Route  path='/' element={<App />} >
        <Route path='/' element={<Home />} />
-        <Route path='/blog' element={<PublicArticles />} />
-  <Route element={<ProtectedAuth/>}>
-    
+      <Route path='/blog' element={<PublicArticles />} />
+       <Route path='/blog/articles/:articleId' element={<SinglePublicArticle />} />
+
+      <Route element={<ProtectedAuth/>}>
         <Route path='/blog/login' element={<Login/>} />
         <Route path='/blog/Register' element={<Register/>} />
-  </Route>
+      </Route>
 
 
-<Route element={<ProtectedRoutes/>}>
-  
-        <Route path='/myprofile' element={<Myprofile/>} />
+        <Route element={<ProtectedRoutes/>}>
+   <Route path='/myprofile' element={<Myprofile/>} />
+
+      <Route element={<ProtectedAdmin/>}>
+          <Route path='/admin/users' element={<ListUsers/>} />
+        <Route path='/admin/users/:userId' element={<ListSingleUsers/>} />
+        <Route path='/admin/users/:userId/edit' element={<UpdateUsers/>} />
+
+        
+
         <Route path='/myprofile/edit' element={<Editprofile/>} />
-         <Route path='/blog/articles/:articleId' element={<SinglePublicArticle />} />
         <Route path='/admin/blog' element={<ListArticles />} />
          <Route path='/admin/blog/articles/:articleId' element={<SingleArticle />} />
           <Route path='/admin/blog/create' element={<CreateArticle />} />
           <Route path='/admin/blog/article-edit/:articleId' element={<UpdateArticle />} />
+      </Route>
 </Route>
        </Route>
       </Routes>

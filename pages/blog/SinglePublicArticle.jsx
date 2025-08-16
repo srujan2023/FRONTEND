@@ -24,8 +24,7 @@ function SinglePublicArticle(){
 
           console.log(data);
 
-          setArticles(data.article)
-          
+          setArticles(data.article);
         } catch (error) {
             console.log(error);
             

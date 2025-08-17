@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { NavLink, Outlet } from "react-router"
 import { useAuthStore } from "./stores/authStore"
 import Header from "./components/Header"
+import { Toaster } from "react-hot-toast"
 
 function App(){
 
@@ -13,6 +14,7 @@ function App(){
 
   return(
     <>
+    <Toaster/>
     <Header />
     <Outlet />
 

@@ -13,7 +13,9 @@ const Register = () => {
      const submitRegister = async (e) =>{
         e.preventDefault()
          
-         register(name,email,password)   
+         register(name,email,password)  
+         
+        // navigate('/blog/login')
         }
   return (
     <>

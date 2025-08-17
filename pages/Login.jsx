@@ -3,14 +3,19 @@ import { Navigate, NavLink, useNavigate } from 'react-router';
 import { useAuthStore } from '../src/stores/authStore';
 
 const Login = () => {
+
   const login = useAuthStore(state =>state.login)
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
+  const Navigate = useNavigate();
+
        
      const submitLogin = async (e) =>{
         e.preventDefault()
 
         login(email,password)
+      //Navigate('/blog')
+        
      }
          
   return (

@@ -1,6 +1,7 @@
 import {create} from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { Navigate, NavLink, useNavigate } from 'react-router'
+import toast from 'react-hot-toast';
 
 
 const authStore = (set,get) => ({
@@ -45,7 +46,19 @@ const authStore = (set,get) => ({
                body: JSON.stringify({name,email,password})
             })
             const data = await response.json()
+
+             if(!response.ok){
              console.log(data);
+
+             if(Array.isArray(data.error)){
+              data.error.map((err) =>{
+                toast.error(err);
+              });
+             }else{
+             toast.error(data.error)
+            }
+              return;
+            }
 
              localStorage.setItem('token',data.token)
 
@@ -54,9 +67,9 @@ const authStore = (set,get) => ({
              get().getProfile();
 
           } catch (error) {
-            console.log(error);
-            
+           //  console.log(data);
           }
+           
     },
 
     //Login Function
@@ -70,7 +83,13 @@ const authStore = (set,get) => ({
                body: JSON.stringify({email,password})
             })
             const data = await response.json()
-             console.log(data);
+            if(!response.ok){
+            console.log(data);
+             toast.error(data.error)
+              return;
+            }
+
+
               //LocalStorge nalli token na save maduthe
              localStorage.setItem('token',data.token)
 
@@ -78,10 +97,9 @@ const authStore = (set,get) => ({
 
              get().getProfile();
 
-
           } catch (error) {
-            console.log(error); 
-          }    
+              console.log(data);
+          }
     },
 
     //UpdateProfile Function

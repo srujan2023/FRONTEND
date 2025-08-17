@@ -26,10 +26,12 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-       <Route  path='/' element={<App />} >
+         <Route  path='/' element={<App />} >
        <Route path='/' element={<Home />} />
       <Route path='/blog' element={<PublicArticles />} />
        <Route path='/blog/articles/:articleId' element={<SinglePublicArticle />} />
+    
+        
 
       <Route element={<ProtectedAuth/>}>
         <Route path='/blog/login' element={<Login/>} />
@@ -38,24 +40,21 @@ createRoot(document.getElementById('root')).render(
 
 
         <Route element={<ProtectedRoutes/>}>
-   <Route path='/myprofile' element={<Myprofile/>} />
+     <Route path='/myprofile' element={<Myprofile/>} />
 
-      <Route element={<ProtectedAdmin/>}>
+        <Route element={<ProtectedAdmin/>}>
           <Route path='/admin/users' element={<ListUsers/>} />
         <Route path='/admin/users/:userId' element={<ListSingleUsers/>} />
         <Route path='/admin/users/:userId/edit' element={<UpdateUsers/>} />
-
-        
-
         <Route path='/myprofile/edit' element={<Editprofile/>} />
         <Route path='/admin/blog' element={<ListArticles />} />
          <Route path='/admin/blog/articles/:articleId' element={<SingleArticle />} />
           <Route path='/admin/blog/create' element={<CreateArticle />} />
           <Route path='/admin/blog/article-edit/:articleId' element={<UpdateArticle />} />
       </Route>
+      </Route>
 </Route>
-       </Route>
-      </Routes>
+     </Routes>
     </BrowserRouter>
   </StrictMode>,
 )

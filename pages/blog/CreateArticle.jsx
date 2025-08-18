@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router"
 import {useAuthStore} from "../../src/stores/authStore"
+import toast from "react-hot-toast"
 
 
 
@@ -25,6 +26,20 @@ function CreateArticle (){
                body: JSON.stringify({title,body,image,status})
             })
             const data = await response.json()
+
+            if(!response.ok){
+              console.log(data);
+
+              if(Array.isArray(data.error)){
+                data.error.map((err) =>{
+                  toast.error(err);
+                })
+              }else{
+                toast.error(data.error)
+              }
+              return 
+            }
+
              console.log(data);
           navigate('/admin/blog')
     }

@@ -6,8 +6,6 @@ const Editprofile = () => {
   const user = useAuthStore(state=>state.user);
   const updateProfile = useAuthStore(state=>state.updateProfile)  
 
-  //Navigate = useNavigate()
-
     const [name,setName] = useState('')
 
     const submitForm = async (e)=>{

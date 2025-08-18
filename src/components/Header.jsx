@@ -11,7 +11,7 @@ const Header = () => {
      
     
     <div>
- <h3>Srujan Blog</h3>
+ {/* <h3>Srujan Blog</h3> */}
  <div className='navigation'>
           <NavLink to="/">Home</NavLink>
          <NavLink to="/blog">Blog</NavLink>

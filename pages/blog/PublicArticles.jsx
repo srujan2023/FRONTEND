@@ -26,17 +26,17 @@ function PublicArticles(){
 
   return(
     <>
-    <center>
+    <center className="PublicArticles">
       <h2>Blog</h2>
-      <br></br>
+    
     
 
       {articles ? (
-        <div>{articles.map((article)=>(
+        <div className="Articles">{articles.map((article)=>(
         <div key={article._id}>
+           <p>Written By {article.user?.name}</p>
           <img  width={"50%"}src={`http://localhost:5000/uploads/${article.image}`} />
           <h2>{article.title}</h2>
-          <p>Written By {article.user?.name}</p>
           <NavLink to={`/blog/articles/${article._id}`}>Read More</NavLink>
         </div>
       ))}</div>):(<div>

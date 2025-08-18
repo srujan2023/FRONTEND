@@ -31,15 +31,15 @@ function SinglePublicArticle(){
     },[])
 
     return(
-        <>
-        <img width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
+        <div >
+        <img className="image" width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
     <h1>{article.title}</h1>
           <p>Written By {article.userId?.name}</p>
         
 
     <p>{article.body}</p>
     
-    </>
+    </div>
     )
 }
 

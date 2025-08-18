@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Navigate, Link, useNavigate } from 'react-router'
+import { Navigate, Link, useNavigate, NavLink } from 'react-router'
 import { useAuthStore } from '../src/stores/authStore'
 
 const Myprofile = () => {
@@ -20,7 +20,7 @@ const Myprofile = () => {
      <p>hello-{user.name} </p>
      <p>Email--{user.email}</p>
      <br />
-      <Link to={'/myprofile/edit'} >Edit Profile</Link>
+      <NavLink to={'/myprofile/edit'} >Edit Profile</NavLink>
       <button onClick={logout} className='editlink'>Logout</button>
      </div>
     </center>

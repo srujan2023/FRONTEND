@@ -12,6 +12,7 @@ function CreateArticle (){
     const [body,setBody] = useState('')
     const [image,setImage]= useState('')
     const [status,setStatus] = useState('private')
+    const [price,setPrice] = useState('')
 
     const navigate = useNavigate();
 
@@ -23,12 +24,13 @@ function CreateArticle (){
                  'Content-Type': 'application/json',
                  Authorization:`Bearer ${token}`
              },
-               body: JSON.stringify({title,body,image,status})
+               body: JSON.stringify({title,body,image,status,price})
             })
             const data = await response.json()
 
             if(!response.ok){
               console.log(data);
+              
 
               if(Array.isArray(data.error)){
                 data.error.map((err) =>{
@@ -64,7 +66,6 @@ function CreateArticle (){
             
     }
 
-
     return(
         <>
         <p>Create Articles</p>
@@ -79,6 +80,11 @@ function CreateArticle (){
             <textarea  onChange={(e)=>setBody(e.target.value)}type="text" placeholder="Enter article title"> </textarea>
           </div>
           <br></br>
+          <div>
+            <label>Price</label>
+            <input value={price} onChange={(e)=>setPrice(e.target.value)} type="number" placeholder="Enter article Price"/>
+          </div>
+      <br></br>
           <div>
                 <label>Status</label>
                 <select value={status} onChange={(e) =>setStatus(e.target.value )}>

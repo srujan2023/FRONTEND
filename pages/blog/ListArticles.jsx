@@ -44,6 +44,7 @@ function ListArticles(){
             <div key={article._id}>
                 <h2>{article.title}</h2>
                 <p>Created By {article.user?.name}</p>
+               {article.price > 0 ? (<div> <p>Rs/-{article.price}</p></div>):(<p>Free</p>)}
                 <NavLink to={`/admin/blog/articles/${article._id}`}>View Article</NavLink>
             </div>
 

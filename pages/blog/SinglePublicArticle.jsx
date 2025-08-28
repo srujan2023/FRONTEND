@@ -34,7 +34,8 @@ function SinglePublicArticle(){
         <div >
         <img className="image" width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
     <h1>{article.title}</h1>
-          <p>Written By {article.userId?.name}</p>
+          {/* <p>Written By {article.userId?.name}</p> */}
+          <button>Buy Now at Rs/-{article.price}</button>
     <p>{article.body}</p>
    
     

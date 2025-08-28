@@ -81,8 +81,7 @@ function SinglePublicArticle(){
         const data = await response.json();
 
         console.log(data);
-
-        getOrder();
+         getOrder();
         
     } catch (error) {
         console.log(error);

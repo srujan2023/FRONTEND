@@ -44,9 +44,9 @@ function SinglePublicArticle(){
 
          console.log(data);
 
-         if(!data.order){
-            getSingleArticle()
-         }
+        //  if(!data.order){
+        //     getSingleArticle()
+        //  }
 
           setArticles(data.order.article);
 
@@ -57,11 +57,13 @@ function SinglePublicArticle(){
     }
 
     useEffect(()=>{
-        if(user){
+        // if(user){
+        // getOrder()
+        // }else{
+        //     getSingleArticle()
+        // }
         getOrder()
-        }else{
-            getSingleArticle()
-        }
+        getSingleArticle()
     },[])
 
 

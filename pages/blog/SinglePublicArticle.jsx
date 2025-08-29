@@ -27,14 +27,11 @@ function SinglePublicArticle(){
             
         }
     }
-    useEffect(()=>{
-        getSingleArticle()
-    },[])
 
     
     const getOrder = async() =>{
         try {
-          const response = await fetch (`http://localhost:5000/api/blog/articles/public/${params.articleId}`,{
+          const response = await fetch (`http://localhost:5000/api/blog/orders/${params.articleId}`,{
               method:"GET",
              headers: {
                  'Content-Type': 'application/json',
@@ -54,10 +51,11 @@ function SinglePublicArticle(){
           setArticles(data.order.article);
 
         } catch (error) {
-           // console.log(error);
+            //console.log(error);
             
         }
     }
+
     useEffect(()=>{
         if(user){
         getOrder()
@@ -65,6 +63,9 @@ function SinglePublicArticle(){
             getSingleArticle()
         }
     },[])
+
+
+
 
      const buyArticle = async ()=>{
     try {
@@ -87,6 +88,9 @@ function SinglePublicArticle(){
         console.log(error);
     }
     }
+
+
+
 
     return(
         <div >

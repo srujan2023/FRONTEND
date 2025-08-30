@@ -8,7 +8,7 @@ function SinglePublicArticle(){
     const user = useAuthStore(state =>state.user);
     const token = useAuthStore(state => state.token);
 
-    const [article,setArticles]= useState({})
+    const [article,setArticle]= useState({})
     const params = useParams();
 
     
@@ -20,11 +20,9 @@ function SinglePublicArticle(){
 
          console.log(data);
 
-          setArticles(data.article);
+          setArticle(data.article);
 
         } catch (error) {
-           // console.log(error);
-            
         }
     }
 
@@ -36,35 +34,30 @@ function SinglePublicArticle(){
              headers: {
                  'Content-Type': 'application/json',
                  Authorization:`Bearer ${token}`
-
              },
         })
 
           const data = await response.json();
+          console.log(data);
 
-         console.log(data);
-
-        //  if(!data.order){
-        //     getSingleArticle()
-        //  }
-
-          setArticles(data.order.article);
+          setArticle(data.order.article);
 
         } catch (error) {
-            //console.log(error);
-            
         }
     }
 
     useEffect(()=>{
-        // if(user){
-        // getOrder()
-        // }else{
-        //     getSingleArticle()
-        // }
-        getOrder()
-        getSingleArticle()
+      //getSingleArticle()
+getOrder()
     },[])
+
+
+
+
+
+
+
+
 
 
 

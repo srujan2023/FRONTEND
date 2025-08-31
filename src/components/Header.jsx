@@ -10,7 +10,7 @@ const Header = () => {
 <nav>
      
     
-    <div className='bg-sky-300 h-10.5 p-3 pr-13'>
+    <div className='bg-sky-200 h-10 text-red-500'>
  {/* <h3>Srujan Blog</h3> */}
  <div className='navigation'>
           <NavLink to="/">Home</NavLink>

@@ -37,12 +37,7 @@ function PublicArticles(){
            <p>Written By {article.user?.name}</p>
           <img  width={"50%"}src={`http://localhost:5000/uploads/${article.image}`} />
           <h2>{article.title}</h2>
-          {article.price > 0 ? (<div>
-          <NavLink to={`/blog/articles/${article._id}`}>Rs/-{article.price} Buy Now</NavLink>
-          </div>):(<div>
           <NavLink to={`/blog/articles/${article._id}`}>Read More</NavLink>
-
-          </div>)}
         </div>
       ))}</div>):(<div>
         <p>No Articles</p>

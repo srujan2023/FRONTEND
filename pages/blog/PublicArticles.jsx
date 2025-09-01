@@ -26,18 +26,15 @@ function PublicArticles(){
 
   return(
     <>
-    <center className="PublicArticles">
-      <h2>Blog</h2>
-    
-    
-
+    <center className="bg-sky-300">
+      <h2 className="text-2xl"><b>Blog Page</b></h2>
       {articles ? (
-        <div className="Articles">{articles.map((article)=>(
+        <div className="py-2.5">{articles.map((article)=>(
         <div key={article._id}>
-           <p>Written By {article.user?.name}</p>
-          <img  width={"50%"}src={`http://localhost:5000/uploads/${article.image}`} />
+           <p className="pr-170.5">Written By {article.user?.name}</p>
+          <img className="rounded-2xl w-230 h-120" src={`http://localhost:5000/uploads/${article.image}`} />
           <h2>{article.title}</h2>
-          <NavLink to={`/blog/articles/${article._id}`}>Read More</NavLink>
+          <NavLink  to={`/blog/articles/${article._id}`}>Read More</NavLink>
         </div>
       ))}</div>):(<div>
         <p>No Articles</p>

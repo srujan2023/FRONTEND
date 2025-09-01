@@ -10,7 +10,7 @@ const Home = () => {
     <marquee behavior="" direction=""> <h1 className='text-2xl pt-1.5 text-green-700'>It is Just A Begining</h1></marquee>
     
 
-     
+      
 
 
      <div className="w-13">
@@ -23,6 +23,12 @@ const Home = () => {
        <a href="https://www.facebook.com/srujana.srujan.3133/">
       <img src="data:image/webp;base64,UklGRkIFAABXRUJQVlA4IDYFAAAQKQCdASoLAQ4BPp1MoEslpKMhqpI4SLATiWVu6B+jWclIwH72YcLLY0uLQZFMwQWfxf2Hq13nkdUz4E9aqbVdFsHVpXU4+Kx8Msh5+1ooRd9+GkYd+1eYIK+jj+DtsKY9/YoP//CQnoB83vAq9zlp0olt5DuhsqPmCCM55/fbT8RF70YmQz6WuzcNxEzPi4jl86j+xDyje6ZtuXBLW1K6L+swwuRFVX7QC/xovht1JG2W0OAgNaf88Wy3SJuWJNF6IGWWeacnAQSXPYa4FwT+p7vLifnQzTBO2jSji3ZqseTGP4LFl/45q/ajfoR+lrmSRaIEnt8Gv8wQTKdWo+d2cElCxj3Z1wCzDy5x3/y4vCg7U26JDwwGyGsQ5b85qgfmvoYXPBYLVdGD4zs6Kz1C1Qf6j//fuOy+Y9ldeGg9jai7AngimQZatIttKUWrSKQAAP75sQHw0KOF8hwzaX6eu0YD8f1mJ3GddEgfdcZAR9mcxCs9cUTX3Y3FxQR/3gpZNoGVINitzS7dz5duykeMhnwNNoJMSc5NQdrJnpFpfGaBjypOC24rE8Dks1shPAJ3x1ADQ5LnEI5gLsNWxb3YoTwgyx8i3Hk6xY1jofqItHDgvG0hieexDEmG1SSJ4sTb84PLsvMu4lSZpxxCLMslNf1/84I47zhrP6k3tkkRBJKfXqCBr7rkC7zzw8xt4wHXy9p4ib3RaeES8dIQG6PW4T+5bCMz5TwpmvIU7IaV48L7hcaQTlqLawQS63cconl0kFleyn8ZZUS2IyA77gXXebyyv8/ETjZmc4YCRG/mqX17CKWIY1vWF4j+JNv7/0jDKh+lhDs+wSANyV8bRjj32ZSXJQNAF5GK/SJa0cvVmGljAcPz5vmCIRpctnL12kg3ryyuYcv+R8adG+AmAfwp4t5ophHePEL+v9H4mIK8xUGbd6iFRoAARPk56ii3ZicVXDQTOC7CtceNEe9A0/JAbCkQesYd2cdZKSsXoDqFJBZxH/xPPcvbWmhunyGABeFIjvVr+m1bmLL1r4q+rCEM66e8FP9munH6rgP1xuUOjKVLbggSkIWNA7YFdVHNTJqF1qH/cTRtujI1V4T+Pgb97ofzjpiqo5CuhMFV6Z66PEvOXWLPSAVrYrl3IEvmsr5EBTWoAK/yBRD2+Z0tuS3rat7LeaxcWs4P51Fw/KS/ubEoGAlsIqSwl3tZJBC0B34be8ezTmIiyZwzndIMl683C0jtdc4nFcwNMTF5M5hhZ5BOSvFZZnVkyqBnvdGtuATrBWhMEU4ZtOYhw9dXUTuEtx5jtp8n1Ws5HjOJOMfP9kHCGPO9w53RDV1K15XM61x9fRA9581lYDDjTkL1J1jf2h2fI6zc0baJRLQVoD/wpQgwra3/BhaYrj1W2mQOXOgPqF9kt9Sigr+1bf6pB/CRs69pDq24JrMImwck1/DXv3Z4fTJtvoKXZQW83Iy1650yEsup1hMM1I8ZDn5oLxRL7fIOfULDZRnabKnkiCTZbO3rsxppB+bBg5AFIAjGcJIsPLTZ6oJISuHP8Gk/BBMdX+YeKtGOl6bNgy7wgN24ayZQKWw4AKhnOOqmgNRcUDy1HzTsBoFibwUHm83CCl5PI+qmn19NtAPo+p5FfoOhVjpArl/qLwEdu6y3kDFq4YxrUPocxKmdgdG/qEf8sjRmJirfAbbBv9jCrG9BoRvDo0uBJcPD6leANM37J2IXbkGiuea+yOIhWnrApba+h/ZGzKn8PjPm1q737dXDRk5QALEAAAAAAA==" alt="" />
      </a>
+
+     <div>
+      <a href=" https://github.com/srujan2023">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="" />
+      </a>
+     </div>
     </div>
 
 

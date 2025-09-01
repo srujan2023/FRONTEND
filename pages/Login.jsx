@@ -21,17 +21,17 @@ const Login = () => {
   return (
     <>
      
-    <center className='login'>
+    <center className='py-25.5 bg-amber-500'>
        
-      <form onSubmit={submitLogin} className='form'>
-        <h2>Login</h2>
-        <input type="text" onChange={(e) =>setEmail(e.target.value)} placeholder='Enter Your Email' />
+      <form onSubmit={submitLogin} className='border-2 w-60.5 rounded-2xl h-50.5 py-3.5 bg-white'>
+        <h2 className='text-2xl pb-2'><b>Login</b></h2>
+        <input type="text" className=' border-1 w-45.5 rounded-2xl ' onChange={(e) =>setEmail(e.target.value)} placeholder='Enter Your Email' />
         <br />
         <br />
-        <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder='Enter Your Password' />
+        <input type="password" className=' border-1 w-45.5 rounded-2xl text-black'  onChange={(e) => setPassword(e.target.value)} placeholder='Enter Your Password' />
         <br />
         <br />
-        <button type='Submit' className='loginbutton'>Login</button>
+        <button type='Submit' className='bg-green-400 rounded-2xl w-22'>Login</button>
        
       </form>
     </center>

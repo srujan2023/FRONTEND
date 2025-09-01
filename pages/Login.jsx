@@ -21,10 +21,10 @@ const Login = () => {
   return (
     <>
      
-    <center className='py-25.5 bg-amber-500'>
+    <center className='py-25 bg-pink-400'>
        
-      <form onSubmit={submitLogin} className='border-2 w-60.5 rounded-2xl h-50.5 py-3.5 bg-white'>
-        <h2 className='text-2xl pb-2'><b>Login</b></h2>
+      <form onSubmit={submitLogin} className='border-2 w-70.5 rounded-2xl h-60.5 py-3.5 bg-white'>
+        <h2 className='text-2xl pb-6'><b>Login</b></h2>
         <input type="text" className=' border-1 w-45.5 rounded-2xl ' onChange={(e) =>setEmail(e.target.value)} placeholder='Enter Your Email' />
         <br />
         <br />

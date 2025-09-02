@@ -4,10 +4,8 @@ import { NavLink } from 'react-router'
 const Home = () => {
   return (
     <>
-<div className=' bg-pink-500'>
-  <marquee behavior="" direction="">
-  <p className='text-3xl'>It is Just a Begining</p>
-</marquee>
+<div className=' bg-pink-500 text-2xl px-95'>
+   <b> <p>It is Just a Begining</p></b>
 </div>
 
 <div className=' px-80 py-8   bg-stone-300'>
@@ -23,9 +21,9 @@ const Home = () => {
 <div className='px-80 py-8    bg-stone-300'>
 <img className='rounded-4xl' src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/319537409/original/50908044de44ab653ea101f7ca1ca8dc960ff85a/be-your-front-end-web-developer-in-react-js-next-js-javascript.jpg" alt="" />
 </div>
-<div>
-  <h1>Contact For Website Any Social Media</h1>
-</div>
+<marquee><p className=''>
+  Note:Contact For Website in Any Social Media
+</p></marquee>
 
 
 

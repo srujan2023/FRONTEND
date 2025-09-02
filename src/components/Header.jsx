@@ -10,7 +10,7 @@ const Header = () => {
 <nav>
      
     
-    <div className= ' py-2 flex px-10.5 bg-sky-200 h-10 text-black-500 '>
+    <div className= ' py-2 flex px-0.5 bg-sky-200 h-10 text-black-500 '>
  <div className='px-7.5'>
           <NavLink to="/">Home</NavLink>
           </div>

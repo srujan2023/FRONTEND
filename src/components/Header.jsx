@@ -10,28 +10,40 @@ const Header = () => {
 <nav>
      
     
-    <div className='bg-sky-200 h-10 text-red-500'>
- {/* <h3>Srujan Blog</h3> */}
- <div className='navigation'>
+    <div className= ' py-2 flex px-10.5 bg-sky-200 h-10 text-black-500 '>
+ <div className='px-7.5'>
           <NavLink to="/">Home</NavLink>
-         <NavLink to="/blog">Blog</NavLink>
+          </div>
+          <div className='px-8.5'>
+            <NavLink to="/blog">Blog</NavLink>
+          </div>
+         
 
     {user ? (
        <>
          {user.role==='admin' && (<>
-      <NavLink to="/admin/blog">DashBoard</NavLink>
+     <div className='px-7.5'>
+       <NavLink to="/admin/blog">DashBoard</NavLink>
+     </div>
 
-
+<div className='px-7.5'>
+   
          <NavLink to="/admin/users">Users</NavLink>
+</div>
 </>)}
 
 
-      <NavLink to="/myprofile">Myprofile</NavLink>
+   <div className='px-7.5'>   <NavLink to="/myprofile">Myprofile</NavLink></div>
+<div className='px-7.5'>
       <button onClick={logout}>Logout</button>
-       </>
+   </div>       </>
 
-    ):(<><NavLink to="/blog/Register">Register</NavLink> 
-    <NavLink to="/blog/login">Login</NavLink></>)}
+    ):(<><div className='px-7.5'>
+      <NavLink to="/blog/Register">Register</NavLink> 
+    </div>
+    <div className='px-7.5'>
+      <NavLink to="/blog/login">Login</NavLink></div></>)}
+    
 
         
             
@@ -40,7 +52,6 @@ const Header = () => {
 
  </div>
 
-    </div>
      
     </nav>  
       </header>

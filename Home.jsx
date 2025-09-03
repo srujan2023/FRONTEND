@@ -40,9 +40,20 @@ const Home = () => {
 
  <a href=" https://github.com/srujan2023">
         <img  className=' px-6 py-6  rounded-4xl   w-25.5 ' src="https://th.bing.com/th/id/OIP.QEpduO7IaOXym50gsDlQlAHaHa?w=170&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" />
-      </a>
+      </a>    
+</div>
 
-    
+<div className='bg-stone-300'>
+  <p className='px-24'>
+  #Srujan AB <br></br>
+  I Study in City Engineering Collage <br></br>
+  2024-2027<br></br>
+  My Future Goal is Masters in IIT Collage
+</p>
+<br></br>
+<NavLink className='px-20.5' to="/About">About</NavLink>
+ <NavLink className='px-20.5' to="/">Home</NavLink>
+ <NavLink className='px-20.5' to="/Servers">Servers</NavLink>
 </div>
 </>
   )

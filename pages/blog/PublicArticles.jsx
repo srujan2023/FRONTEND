@@ -27,7 +27,7 @@ function PublicArticles(){
   return(
     <>
     <center className=" bg-stone-300">
-      <h2 className="text-2xl bg-fuchsia-400 h-13.5 py-2.5"><b>Blog Page</b></h2>
+      <h2 className="text-2xl bg-pink-400 h-13.5 py-2.5"><b>Blog Page</b></h2>
       {articles ? (
         <div className="py-2.5">{articles.map((article)=>(
         <div key={article._id}>

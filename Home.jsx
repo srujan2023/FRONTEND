@@ -28,6 +28,17 @@ const Home = () => {
 
 
 
+
+
+<div className='bg-stone-300'>
+  <p className='px-24 text-center'>
+    <img className=' rounded-4xl h-63.5 px-80 pt-2.5' src="Srujan.jpeg" alt="" />
+  <i>#Srujan AB <br></br>
+  I Study in City Engineering Collage <br></br>
+  2024-2027<br></br>
+  My Future Goal is Masters in IIT Collage</i>
+</p>
+<br />
   {/* Social Media Section */}
 <div className=' px-70 flex space-x-8.5 py-1 bg-emerald-300  text-center'>
 
@@ -46,21 +57,11 @@ const Home = () => {
         <img  className=' px-6 py-6  rounded-4xl   w-25.5 '  src="data:image/webp;base64,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" alt="" />
         </a> 
 </div>
-
-<div className='bg-stone-300'>
-  <p className='px-24 text-center'>
-    <img className=' rounded-4xl h-63.5 px-80 pt-2.5' src="Srujan.jpeg" alt="" />
-  <i>#Srujan AB <br></br>
-  I Study in City Engineering Collage <br></br>
-  2024-2027<br></br>
-  My Future Goal is Masters in IIT Collage</i>
-</p>
-<br />
 {/* <br></br>
 <NavLink className='px-20.5' to="/About">About</NavLink>
  <NavLink className='px-20.5' to="/">Home</NavLink>
  <NavLink className='px-20.5' to="/Servers">Servers</NavLink> */}
- <NavLink className=' m-110.5 px-10.5 rounded-2xl bg-red-500 ' to="/blog">Blog</NavLink>
+ <NavLink className='  m-110.5 px-10.5   rounded-2xl bg-red-500 ' to="/blog">Blog</NavLink>
 
 </div>
 </>

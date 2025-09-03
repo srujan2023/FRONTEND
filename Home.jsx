@@ -4,9 +4,6 @@ import { NavLink } from 'react-router'
 const Home = () => {
   return (
     <>
-<div className=' bg-pink-500 text-2xl px-95 h-10.5'>
-   <b> <p>It is Just a Begining</p></b>
-</div>
 
 <div className=' px-80 py-8   bg-stone-300'>
 <img className='rounded-4xl' src="https://i.ytimg.com/vi/sHzJoeXoSfs/maxresdefault.jpg" alt="" />

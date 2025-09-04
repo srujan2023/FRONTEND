@@ -35,16 +35,17 @@ function ListArticles(){
     },[])
     
   return(
-    <>
-     <h1>List All Articles</h1>
-    <NavLink to={"/admin/blog/create"}>Create Article</NavLink>
+    < >
+   <div className=" bg-stone-300">
+     <b> <h1 className="text-center">List All Articles</h1></b>
+    <NavLink className='px-3.5  bg-green-500 rounded-4xl' to={"/admin/blog/create"}>Create Article</NavLink>
      {articles ? (
-             <div>
+             <div className="text-center">
          {articles.map((article)=>(
             <div key={article._id}>
-                <h2>{article.title}</h2>
+        <center>  <img className="rounded-2xl h-74 py-1.5" src={`http://localhost:5000/uploads/${article.image}`} />
+</center>                <h2>{article.title}</h2>
                 <p>Created By {article.user?.name}</p>
-               {article.price > 0 ? (<div> <p>Rs/-{article.price}</p></div>):(<p>Free</p>)}
                 <NavLink to={`/admin/blog/articles/${article._id}`}>View Article</NavLink>
             </div>
 
@@ -56,6 +57,7 @@ function ListArticles(){
             </div>
         )}
 
+   </div>
 
     </>
   )

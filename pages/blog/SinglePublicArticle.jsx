@@ -87,17 +87,13 @@ function SinglePublicArticle(){
 
 
     return(
-        <div >
-        <img className="image" width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
-    <h1>{article.title}</h1>
-          {/* <p>Written By {article.userId?.name}</p> */}
-          {/* {
-            article.price > 0 ? (!article.body &&  <button>Buy Now at Rs/-{article.price}</button>)
-             : null
-          } */}
-        
-    <p>{article.body}</p>
-   
+        <div className=" bg-stone-300" >
+      <center>
+          <img className="rounded-4xl pt-5 px-7 " width={'49%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
+   <b> <h1>{article.title}</h1></b>
+    <i><p className="pb-36">{article.body}</p></i>
+    
+      </center>
     
     </div>
     )

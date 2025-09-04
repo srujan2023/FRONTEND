@@ -30,7 +30,7 @@ function PublicArticles(){
       <h2 className="text-2xl bg-pink-400 h-13.5 py-2.5"><b>Blog Page</b></h2>
       {articles ? (
         <div className="py-2.5">{articles.map((article)=>(
-        <div key={article._id}>
+        <div className="" key={article._id}>
            <p className="pr-74.5 pt-8 text-fuchsia-900  h-14 " >Written By {article.user?.name}</p>
           <img className="rounded-2xl w-130 " src={`http://localhost:5000/uploads/${article.image}`} />
           <h2 className="w-5xl">{article.title}</h2>

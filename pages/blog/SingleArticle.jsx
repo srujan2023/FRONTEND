@@ -57,15 +57,20 @@ function SingleArticle(){
     }
     return(
         <>
-        <img width={'100%'}src={`http://localhost:5000/uploads/${article.image}`} alt="" />
-    <h1>{article.title}</h1>
-    <p>{article.body}</p>
-    <br></br>
-    <NavLink to={`/admin/blog/article-edit/${article._id}`}>Update Article</NavLink>
+       <div className="bg-stone-300 h-130">
 
-    <br />
+        <center>
+         <img className="pt-5.5 rounded-4xl"  src={`http://localhost:5000/uploads/${article.image}`} alt="" />
+       <b>  <h1>{article.title}</h1>
+</b>    <p>{article.body}</p>
+        </center>
+   
     <br></br>
-    <button onClick={deleteButtonClicked}>Delete</button>
+   <div className="px-95 ">
+     <NavLink className='bg-green-400 px-1.5 rounded-4xl' to={`/admin/blog/article-edit/${article._id}`}>Update Article</NavLink>
+    <button className='bg-red-500 px-1.5 rounded-4xl ' onClick={deleteButtonClicked}>Delete</button>
+   </div>
+       </div>
     </>
     )
 }

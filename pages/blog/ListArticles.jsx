@@ -37,7 +37,7 @@ function ListArticles(){
   return(
     < >
    <div className=" bg-stone-300">
-     <b> <h1 className="text-center">List All Articles</h1></b>
+     <b> <h1 className="text-center bg-blue-400 h-12 pt-3">List All Articles</h1></b>
     <NavLink className='px-3.5  bg-green-500 rounded-4xl' to={"/admin/blog/create"}>Create Article</NavLink>
      {articles ? (
              <div className="text-center">
@@ -46,7 +46,7 @@ function ListArticles(){
         <center>  <img className="rounded-2xl h-74 py-1.5" src={`http://localhost:5000/uploads/${article.image}`} />
 </center>                <h2>{article.title}</h2>
                 <p>Created By {article.user?.name}</p>
-                <NavLink to={`/admin/blog/articles/${article._id}`}>View Article</NavLink>
+                <NavLink className='bg-green-400 rounded-4xl px-1.5' to={`/admin/blog/articles/${article._id}`}>View Article</NavLink>
             </div>
 
          ))}

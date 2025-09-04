@@ -36,12 +36,17 @@ createRoot(document.getElementById('root')).render(
 
       <Route path='/blog' element={<PublicArticles />} />
        <Route path='/blog/articles/:articleId' element={<SinglePublicArticle />} />
+
+
+
     
         
 
       <Route element={<ProtectedAuth/>}>
         <Route path='/blog/login' element={<Login/>} />
         <Route path='/blog/Register' element={<Register/>} />
+          <Route path='/admin/blog/article-edit/:articleId' element={<UpdateArticle />} />
+
       </Route>
 
 
@@ -56,7 +61,6 @@ createRoot(document.getElementById('root')).render(
         <Route path='/admin/blog' element={<ListArticles />} />
          <Route path='/admin/blog/articles/:articleId' element={<SingleArticle />} />
           <Route path='/admin/blog/create' element={<CreateArticle />} />
-          <Route path='/admin/blog/article-edit/:articleId' element={<UpdateArticle />} />
       </Route>
       </Route>
 </Route>

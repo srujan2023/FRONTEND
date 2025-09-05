@@ -37,16 +37,18 @@ const ListUsers = () => {
     
     <div>
       <b ><h1 className='text-center bg-blue-400 h-9 py-1.5'>ListUsers</h1></b>
-      
+      <center>
+        
       {users ? (
              <div>
          {users.map((user)=>(
-          <div className='bg-stone-300'>
-              <div className='flex bg-yellow-300 border rounded-1xl ' key={user._id}>
+          <div className='bg-stone-300 text-center pl-40.5'>
+              <div className='border bg-blue-200  rounded-1xl py-1 text-center w-170.5 pl-6 ' key={user._id}>
                 <p>Name--{user.name}</p>
                 <p>Email--{user.email}</p>
                 <p>Role--{user.role}</p>
-                <NavLink to={`/admin/users/${user._id}`}>View User</NavLink>
+                <NavLink className="bg-green-400 rounded-4xl px-1.5" to={`/admin/users/${user._id}`}>View User</NavLink>
+          
             </div>
           </div>
 
@@ -56,7 +58,9 @@ const ListUsers = () => {
               <div>
             <p>No Users</p>
             </div>
+     
         )}
+         </center>
   </div>
   )
 }

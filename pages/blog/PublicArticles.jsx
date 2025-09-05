@@ -34,7 +34,7 @@ function PublicArticles(){
            <p className="pr-74.5 pt-8 text-fuchsia-900  h-14 " >Written By {article.user?.name}</p>
           <img className="rounded-2xl w-130 " src={`http://localhost:5000/uploads/${article.image}`} />
           <h2 className="w-5xl">{article.title}</h2>
-          <NavLink className= '  bg-green-400 rounded-2xl ' to={`/blog/articles/${article._id}`}> Read more  </NavLink>
+          <NavLink className= '  bg-green-400 rounded-2xl px-1 ' to={`/blog/articles/${article._id}`}> Read more  </NavLink>
         </div>
       ))}</div>):(<div>
         <p>No Articles</p>

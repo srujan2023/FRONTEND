@@ -38,10 +38,12 @@ function ListSingleUser(){
 
   return (
     <div>
-      <p>ListSingleUers</p>
-      <p>{user.name}</p>
-      <p>{user.email}</p>
-    <NavLink to={`/admin/users/${user._id}/edit`}>Update User</NavLink>
+     <b> <p className='text-center bg-blue-400 h-10 py-2 pl-10 '>SingleUers</p></b>
+     <div className='text-center py-29 bg-stone-300 h-112 border  w-260'>
+       <p className='py-1.5'>Name: {user.name}</p>
+      <p className='pb-3.5 '>Email: {user.email}</p>
+    <NavLink className='bg-green-400 px-1.5 rounded-4xl py-1' to={`/admin/users/${user._id}/edit`}>Update User</NavLink> 
+     </div>
     </div>
   )
 }

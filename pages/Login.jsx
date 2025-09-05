@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <>
      
-    <center className='py-25 bg-pink-400'>
+    <center className='py-25 bg-stone-300'>
        
       <form onSubmit={submitLogin} className='border-2 w-70.5 rounded-2xl h-60.5 py-3.5 bg-white'>
         <h2 className='text-2xl pb-8'><b>Login</b></h2>

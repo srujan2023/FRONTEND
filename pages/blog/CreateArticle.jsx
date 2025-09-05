@@ -68,39 +68,33 @@ function CreateArticle (){
 
     return(
         <>
-        <p>Create Articles</p>
-        <form onSubmit={createFormsummited}>
+       <b> <p className="bg-blue-400 h-10 text-center">Create Article Here</p></b>
+       <div className="pl-60  bg-stone-300 py-6  h-105" >
+         <form className="bg-blue-200 rounded-4xl h-70 text-center py-6 border pl-19 w-150" onSubmit={createFormsummited}>
           <div>
-              <label>Title</label>
+              <label>Title: </label>
             <input  onChange={(e)=>setTitle(e.target.value)} type="text" placeholder="Enter article title"/>
           </div>
-          <br></br>
             <div>
-              <label>Body</label>
+              <label className="pr-2.5">Body: </label>
             <textarea  onChange={(e)=>setBody(e.target.value)}type="text" placeholder="Enter article title"> </textarea>
           </div>
-          <br></br>
-          <div>
-            <label>Price</label>
-            <input value={price} onChange={(e)=>setPrice(e.target.value)} type="number" placeholder="Enter article Price"/>
-          </div>
-      <br></br>
-          <div>
-                <label>Status</label>
+          <div className="py-5.5 pr-26.5">
+          <label>Status</label>
                 <select value={status} onChange={(e) =>setStatus(e.target.value )}>
                   <option value="public">Public</option>
                   <option value="private">Private</option>
                 </select>
           </div>
-          <br></br>
-          <div>
-            <label htmlFor="">Image Uploads</label>
+          <div className=" pb-5.5 pr-43.5">
+            <label htmlFor="">Image</label>
             <br></br>
             <input type="file" onChange={uploadImage}/>
           </div>
-          <br></br>
-          <button >Create Article</button>
+          <button className="bg-green-400 px-1.5 rounded-4xl" >Create Article</button>
+       
         </form>
+        </div>
         </>
     )
 

@@ -52,12 +52,13 @@ createRoot(document.getElementById('root')).render(
 
         <Route element={<ProtectedRoutes/>}>
      <Route path='/myprofile' element={<Myprofile/>} />
+        <Route path='/myprofile/edit' element={<Editprofile/>} />
+
 
         <Route element={<ProtectedAdmin/>}>
           <Route path='/admin/users' element={<ListUsers/>} />
         <Route path='/admin/users/:userId' element={<ListSingleUsers/>} />
         <Route path='/admin/users/:userId/edit' element={<UpdateUsers/>} />
-        <Route path='/myprofile/edit' element={<Editprofile/>} />
         <Route path='/admin/blog' element={<ListArticles />} />
          <Route path='/admin/blog/articles/:articleId' element={<SingleArticle />} />
           <Route path='/admin/blog/create' element={<CreateArticle />} />

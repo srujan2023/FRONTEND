@@ -64,29 +64,30 @@ function UpdateSingleUser(){
 
    return(
         <div>
-        Update Article
-
-          <form onSubmit={UpdateUserFormSubmited}>
-          <div>
-              <label>Name</label>
+    <b><h1 className="text-center bg-blue-400 h-10 py-1.5">Update User</h1></b>
+<div className="py-6.5 text-center px-86.5 pt-20 bg-stone-300 h-110">
+  
+          <form className="border text-center w-70 rounded-4xl bg-amber-200 pb-1.5" onSubmit={UpdateUserFormSubmited}>
+          <div className="py-2.5 pl-11 ">
+              <label >Name: </label>
             <input defaultValue={user.name} onChange={(e)=>setName(e.target.value)} type="text"/>
           </div>
-          <br></br>
-            <div>
-              <label>Email</label>
+        
+            <div className="py-2.5 pl-11">
+              <label >Email: </label>
             <input type="Email" defaultValue={user.email} onChange={(e)=>setEmail(e.target.value)} />
           </div>
-          <br></br>
-          <br></br>
-           <label>Role</label>
+        <div className="py-2.5">
+          
+           <label >Role</label>
             <select  defaultValue={user.role}value={role} onChange={(e) => setRole(e.target.value)}>
               <option value='user'>user</option>
                <option value='admin'>admin</option>
             </select>
-           <br></br>
-           <br/>
-          <button >Update User</button>
-        </form> 
+        </div>
+          <button className="pt-.5 rounded-4xl px-1  bg-green-400" >Update User</button>
+        </form > 
+</div>
     </div>
   )
 }

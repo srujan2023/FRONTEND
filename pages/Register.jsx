@@ -21,8 +21,8 @@ const Register = () => {
     <>
      
     <div className='bg-stone-300 h-105 pt-23  pl-91'>
-       <center className='border w-66 rounded-4xl h-60 '> 
-       <form onSubmit={submitRegister} className='form1'>
+       <center className='border w-66 h-60 bg-white rounded-4xl '> 
+       <form onSubmit={submitRegister} className=''>
         <b> <h2 className='pt-1.5'>Register</h2></b>
         <input type="text" onChange={(e)=> setName(e.target.value)} placeholder='Enter Your name' />
         <br />

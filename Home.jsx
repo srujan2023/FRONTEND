@@ -32,11 +32,15 @@ const Home = () => {
 
 <div className='bg-stone-300'>
   <p className='px-24 text-center'>
-    <img className=' rounded-4xl h-63.5 px-80 pt-2.5' src="Srujan.jpeg" alt="" />
   <i>#Srujan AB <br></br>
   I Study in City Engineering Collage <br></br>
   2024-2027<br></br>
-  My Future Goal is Masters in IIT Collage</i>
+<div className='px-25.5'>
+  <img  className='rounded-4xl w-5.5 pb-0.5' src="https://thfvnext.bing.com/th/id/OIP.HtUTaRfu1OJ6iJXZcBxibAHaHa?w=171&h=180&c=7&r=0&o=7&cb=thfvnext&dpr=1.5&pid=1.7&rm=3" alt="" />
+  </div><p >
+  Srinagar,Banglore
+</p>
+</i>
 </p>
 <br />
   {/* Social Media Section */}

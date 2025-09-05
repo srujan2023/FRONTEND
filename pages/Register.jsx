@@ -20,9 +20,10 @@ const Register = () => {
   return (
     <>
      
-     <center className='center'>
+    <div className='bg-stone-300 h-105 pt-23  pl-91'>
+       <center className='border w-66 rounded-4xl h-60 '> 
        <form onSubmit={submitRegister} className='form1'>
-         <h2>Register</h2>
+        <b> <h2 className='pt-1.5'>Register</h2></b>
         <input type="text" onChange={(e)=> setName(e.target.value)} placeholder='Enter Your name' />
         <br />
         <br />
@@ -32,10 +33,13 @@ const Register = () => {
         <input type="text" onChange={(e) => setPassword(e.target.value)} placeholder='Enter Your Password' />
         <br />
         <br />
-        <button type='Submit' className='register'>Register</button>
-        <NavLink to="/blog/login" className='lbutton'>Login</NavLink>
-      </form>
+        <button  className="bg-red-400 rounded-4xl px-1.5" type='Submit'>Register</button>
+<div className='py-2.5'>
+        <NavLink className="bg-green-400 rounded-4xl px-1.5" to="/blog/login" >Login</NavLink>
+  
+  </div>      </form>
      </center>
+    </div>
     </>
   )
 }
